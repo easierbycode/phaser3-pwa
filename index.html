@@ -23,7 +23,7 @@
     <script>
       if ( 'serviceWorker' in navigator ) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('sw.js', {scope: '/phaser3-pwa'}).then(function( registration ) {
+          navigator.serviceWorker.register('sw.js', {scope: '/phaser3-pwa/'}).then(function( registration ) {
             console.log( 'SW reg scope: ', registration.scope );
           }, function( err ) {
             console.log( 'failed: ', err );
